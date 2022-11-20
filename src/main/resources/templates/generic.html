@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Spectral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index"></a></h1>
+
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index">Home</a></li>
+											<li><a href="generic">Generic</a></li>
+											<li><a href="elements">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>dcefcef</h2>
+							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+							<form action="#" th:action="@{/generic}" th:object="${inquiry}" class="searchform order-lg-last" method="${post}">
+								<div class="form-group d-flex">
+									<input type="text" id="search1" name="search1"  th:field="*{inquiry.search1}"  class="form-control " placeholder="Search">
+									<button type="submit" class="form-control search"><span class="fa fa-search"></span></button>
+								</div>
+							</form>
+
+						</header>
+						<section class="wrapper style5">
+							<div class="w3-col l3 m6 w3-margin-bottom">>
+								<div class="w3-card" >
+									<div  class="row">
+
+										<div th:each="generic:${g1}"  class="col-4">
+											<div  th:style="'background-image: url('+${generic.message}+');'"  >
+									<div class="w3-container">
+										<mark><h3 style="color:yellow"><span th:text="${generic.name}" ></span></h3></mark>
+
+										<h3 style="color:yellow"><span th:text="${generic.occupation}"></span></h3>
+
+
+										<p><button class="w3-button w3-light-grey w3-block">
+											<i class="fa fa-envelope"></i>
+											Contact</button></p>
+
+								</div>
+
+							</div>
+							</div>
+							</div>
+							</div>
+
+							</div>
+						</section>
+					</article>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+
+
+			<div class="row">
+
+				</div>
+
+			</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
